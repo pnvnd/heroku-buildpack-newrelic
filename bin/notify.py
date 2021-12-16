@@ -7,8 +7,8 @@ env_dir = os.environ['ENV_DIR']
 new_relic_api_key = os.popen('cat {}/NEW_RELIC_API_KEY'.format(env_dir)).read()
 new_relic_app_id = os.popen('cat {}/NEW_RELIC_APP_ID'.format(env_dir)).read()
 deployer = os.popen('cat {}/DEPLOYER'.format(env_dir)).read()
+release_version = os.popen('cat {}/HEROKU_RELEASE_VERSION'.format(env_dir)).read()
 commit_id = os.environ['SOURCE_VERSION']
-release_version = os.environ['HEROKU_RELEASE_VERSION']
 
 url = 'https://api.newrelic.com/v2/applications/{}/deployments.json'.format(new_relic_app_id)
 
