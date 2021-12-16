@@ -24,6 +24,7 @@ deployment_info = {
 newrelic_headers = {'X-Api-Key': new_relic_api_key}
 
 print("-----> Notifying NewRelic about current deployment")
+
 try:
     requests.post(url, json=deployment_info, headers=newrelic_headers)
 except:
