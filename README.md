@@ -1,4 +1,4 @@
-# Heroku BuildpackL New Relic
+# Heroku Buildpack: New Relic
 This buildpack is used to send deployment markers to New Relic.
 
 ## Requirements
