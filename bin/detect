@@ -5,6 +5,6 @@ if [ -z "$NEW_RELIC_API_KEY" ||  -z "$NEW_RELIC_APP_ID" ]; then
   echo "no NEW_RELIC_API_KEY or no NEW_RELIC_APP_ID"
   exit 1
 else
-  echo "Notify NewRelic"
+  echo "New Relic Deployment Marker"
   exit 0
 fi
