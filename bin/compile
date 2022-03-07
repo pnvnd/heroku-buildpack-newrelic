@@ -11,6 +11,6 @@ export ENV_DIR=${3:-}
 
 ### Notify New Relic about current deployment
 
-echo "-----> Executing NewRelic notificator"
+echo "-----> Inserting New Relic Deployment Marker"
 
 python $NOTIFICATION_SCRIPT
